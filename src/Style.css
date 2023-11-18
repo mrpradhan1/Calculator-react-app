@@ -1,0 +1,61 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    height: 100vh;
+}
+.cal{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+    gap: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 20px -20px 100px 0px rgba(34, 35,218, 0.6),
+    -20px 20px 100px 0px rgba(220,55,120,0.6);
+    padding: 3rem;
+}
+h1{
+    font-weight: 700;
+}
+input {
+    padding: 10px;
+    border:  2px solid black;
+    font-size: 20px;
+    border-radius: 10px;
+}
+::placeholder{
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+    width: 80%;
+}
+.btn{
+    background-color: #222;
+    color:  white;
+    height: 40px;
+    width:  40px;
+    border: none;
+}
+.status{
+    color: blue;
+    margin-bottom: 1.5rem;
+}
+.status.error{
+    color:red;
+}
+.result{
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(175, 44, 20);
+}
